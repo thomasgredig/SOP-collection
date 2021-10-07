@@ -1,0 +1,16 @@
+--- 
+title: "Gredig Lab: SOP Collection"
+author: "Thomas Gredig"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+---
+
+# Standard Operating Procedures
+
+Collection of Standard Operating Procedures. No liability is taken by any of the authors, use responsibly.
+
+## Authors
+
+- Thomas Gredig, lab director
+- Spencer Halls, contributor
+
