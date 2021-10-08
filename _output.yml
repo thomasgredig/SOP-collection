@@ -18,17 +18,17 @@ bookdown::gitbook:
       # fuse.js, refer to https://fusejs.io/api/options.html)
       options: null
     fontsettings:
-      theme: night
+      theme: sepia
       family: sans
       size: 2
       sharing:
-      facebook: false
-      github: false
-      twitter: true
-      linkedin: true
-      weibo: false
-      instapaper: false
-      vk: false
-      whatsapp: false
-      all: ['facebook', 'twitter', 'linkedin', 'weibo', 'instapaper']
+        facebook: false
+        github: true
+        twitter: true
+        linkedin: true
+        weibo: false
+        instapaper: false
+        vk: false
+        whatsapp: false
+        all: false # ['facebook', 'twitter', 'linkedin', 'weibo', 'instapaper']
     info: true
