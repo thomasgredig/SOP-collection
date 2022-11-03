@@ -44,13 +44,13 @@ the wall vent before using the machine.
 
 1. Slowly open gas cylinder valves. Make sure the vacuum pump
 exhaust tube is securely connected to the wall vent.
-  a. Power Level knob should be off (counter clockwise).
-  b. The gas flow meter should be off (ball at the bottom).
-  c. The door is closed & locked.
+    a. Power Level knob should be off (counter clockwise).
+    b. The gas flow meter should be off (ball at the bottom).
+    c. The door is closed & locked.
   
 2. Tum the machine on.
-  a. Tum the vacuum pump on.
-  b. Tum the POWER ON in the back(up position).
+    a. Tum the vacuum pump on.
+    b. Tum the POWER ON in the back(up position).
 3. Press ENTER to access the Commands menu.
 
 4. Press ENTER to select the PLASMA option.
@@ -58,21 +58,21 @@ exhaust tube is securely connected to the wall vent.
 5. Load the material and close the chamber door. .
 
 6. Press ENTER to start the cycle. The following process will start:
-  a. It will pump down to the Vacuum Set Point (~2-3 mins)
-  b. The Gas Stabilize process will start. Turn the gas flow meter knob counter clockwise and make sure the gas is flowing. Take note of the gas flow meter reading.
-  c. Plasma Cycle will start. Tum on the Power Level within 3 seconds. Make sure to observe the purple glow of the plasma. Take note of the Power Level. Observe and record the gas pressure by pressing the left arrow button while the plasma cycle is occurring.
-  d. The system will vent for the time set in Purge Vent. This will clear the chamber of the gas. Turn off the Power within 3 secs. The plasma glow should be gone at this point. After the Purge Vent is finished, it will do a Purge Pump down to the Vacuum Set Point to clear the chamber of the gas and pressure. After the Purge Pump down, the Plasma Cycle will be complete.
+    a. It will pump down to the Vacuum Set Point (~2-3 mins)
+    b. The Gas Stabilize process will start. Turn the gas flow meter knob counter clockwise and make sure the gas is flowing. Take note of the gas flow meter reading.
+    c. Plasma Cycle will start. Tum on the Power Level within 3 seconds. Make sure to observe the purple glow of the plasma. Take note of the Power Level. Observe and record the gas pressure by pressing the left arrow button while the plasma cycle is occurring.
+    d. The system will vent for the time set in Purge Vent. This will clear the chamber of the gas. Turn off the Power within 3 secs. The plasma glow should be gone at this point. After the Purge Vent is finished, it will do a Purge Pump down to the Vacuum Set Point to clear the chamber of the gas and pressure. After the Purge Pump down, the Plasma Cycle will be complete.
   
 7. After the cycle is completed, go to the Commands menu by pressing the up arrow key, pressing the ENTER button once, and pressing the right arrow button to select CYCLE-OFF.
-  a. It will do the Atmospheric Vent process for 2 mins.
+    a. It will do the Atmospheric Vent process for 2 mins.
   
 8. Carefully and safely remove the material. Close and lock the door.
 
 9. Shut the machine down and close the gas cylinder valves.
-  a. Tum the POWER OFF in the back.
-  b. Turn the vacuum pump off.
-  c. Close the gas cylinder main valve.
-  d. Shut the secondary valve in the gas cylinder.
+    a. Tum the POWER OFF in the back.
+    b. Turn the vacuum pump off.
+    c. Close the gas cylinder main valve.
+    d. Shut the secondary valve in the gas cylinder.
 
 
 ## Command Menu
