@@ -1,0 +1,22 @@
+# Rigaku X-Ray Diffractometer 
+
+
+### History
+- initial: 11/07/2022
+- update: xx
+
+## Warnings
+- Only trained users can operate the Rigaku X-Ray Diffractometer (XRD)
+- To become a trained user, one must complete the following
+  + Complete the radiaiton safety training provided by the CNSM safety office, which can be found at /[Radiation Safety Training.](https://web.csulb.edu/colleges/cnsm/radiation/)
+  + Once radiation training is complete, the prospective user must contact Dr. Gredig or Dr. Gu to receive training on the XRD itself.
+- Carefully read the entire manual before operation.
+
+
+## System Start Up
+- Sign your name in the log book / [GWiki](https://beach77.com/gwiki/index.php?title=Instruments#Rigaku_XRD)
+- Log the parameters that will be used 
+  + Time when system start up begins.
+  + What protocol will be used to age the x-ray tube.
+- Turn on the Haskris Chiller using the I/O switch on the machine.
+-
