@@ -12,5 +12,6 @@ Collection of Standard Operating Procedures. No liability is taken by any of the
 ## Authors
 
 - Thomas Gredig, lab director
-- Spencer Halls, contributor
-- Ryan Mizukami, contributor
+- Spencer Halls, contributor (Park AFM)
+- Ryan Mizukami, contributor (XRD, Cypher)
+- Andy Huang, contributor (UH4150)
