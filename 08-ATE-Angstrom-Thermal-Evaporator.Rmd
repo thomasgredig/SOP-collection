@@ -6,7 +6,7 @@
 
 2.   Turn on the computer.
 
-3.   Open the AeresStartup Software and log into the assigned user.
+3.   Open the `AeresStartup` Software and log into the assigned user.
 
 4.   If the deposition chamber pressure reads “Over Range (Torr)”, the deposition chamber is not pressurized and is able to be opened. If deposition chamber pressure reads any value, depressurize the chamber by selecting the “System” chiclet, selecting the “Vacuum System” tab and starting the “Vent” process as shown below.
 
