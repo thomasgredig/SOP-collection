@@ -1,0 +1,18 @@
+/*-- scss:defaults --*/
+
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+
+$font-family: "Atkinson Hyperlegible", sans-serif;
+
+/* CSS for highlighting an algorithm segment */
+.algorithm-highlight {
+    background-color: #f0f8ff; /* Light blue background */
+    border-left: 4px solid #4682b4; /* Blue border on the left */
+    border-right: 4px solid #4682b4;
+    padding: 5px; /* Padding around the text */
+    margin: 0 20px;  /* Margin above and below the segment */
+    //font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #333; /* Dark text color */
+    border-radius: 15px; /* Rounded corners */
+}

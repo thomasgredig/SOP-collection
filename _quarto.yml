@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "SOP"
+  navbar:
+    left:
+      - index.qmd
+      - href: instruments/01-ParkAFM.qmd
+        text: Park AFM
+      - href: instruments/02-EMS575-Sputtering.qmd
+        text: EMS 575 Sputter Coater
+      - href: instruments/03-PE25-Plasma-Etcher.qmd
+        text: Plasma Etcher
+      - href: instruments/04-XRD-Rigaku-X-Ray-Diffractometer.qmd
+        text: Rigaku XRD
+      - href: instruments/05-CypherAFM.qmd
+        text: Cypher AFM
+      - href: instruments/06-Photospectrometer.qmd
+        text: UH 4150
+      - href: instruments/08-ATE-Angstrom-Thermal-Evaporator.qmd
+        text: AE Thermal Evaporator
+
+
+bibliography: [assets/bib/sop.bib]
+csl: assets/css/elsevier-harvard.csl
+
+execute:
+  echo: true
+  cache: false
+  freeze: auto  # re-render only when source changes
+
+format:
+  html:
+    toc: true
+    theme:
+      - spacelab  # cosmo spacelab darkly simplex
+      - assets/css/theme.scss

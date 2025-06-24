@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>cypherafm – SOP</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-bd63a85aa89f700c731407e261dd04a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SOP</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Gredig Lab: SOP Collection</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../instruments/01-ParkAFM.html"> 
+<span class="menu-text">Park AFM</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../instruments/02-EMS575-Sputtering.html"> 
+<span class="menu-text">EMS 575 Sputter Coater</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../instruments/03-PE25-Plasma-Etcher.html"> 
+<span class="menu-text">Plasma Etcher</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../instruments/04-XRD-Rigaku-X-Ray-Diffractometer.html"> 
+<span class="menu-text">Rigaku XRD</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../instruments/05-CypherAFM.html" aria-current="page"> 
+<span class="menu-text">Cypher AFM</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../instruments/06-Photospectrometer.html"> 
+<span class="menu-text">UH 4150</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../instruments/08-ATE-Angstrom-Thermal-Evaporator.html"> 
+<span class="menu-text">AE Thermal Evaporator</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cypher-afm" id="toc-cypher-afm" class="nav-link active" data-scroll-target="#cypher-afm">Cypher AFM</a>
+  <ul class="collapse">
+  <li><a href="#history" id="toc-history" class="nav-link" data-scroll-target="#history">History</a></li>
+  <li><a href="#warnings" id="toc-warnings" class="nav-link" data-scroll-target="#warnings">Warnings</a></li>
+  <li><a href="#reserve-a-session-before-you-plan-to-use" id="toc-reserve-a-session-before-you-plan-to-use" class="nav-link" data-scroll-target="#reserve-a-session-before-you-plan-to-use">Reserve a Session BEFORE you plan to use</a></li>
+  <li><a href="#system-start-up" id="toc-system-start-up" class="nav-link" data-scroll-target="#system-start-up">System Start Up</a></li>
+  <li><a href="#measurement-for-ac-mode" id="toc-measurement-for-ac-mode" class="nav-link" data-scroll-target="#measurement-for-ac-mode">Measurement for AC Mode</a>
+  <ul class="collapse">
+  <li><a href="#starting-the-software" id="toc-starting-the-software" class="nav-link" data-scroll-target="#starting-the-software">Starting the Software</a></li>
+  <li><a href="#loading-samples" id="toc-loading-samples" class="nav-link" data-scroll-target="#loading-samples">Loading Samples</a></li>
+  <li><a href="#setting-the-focuses-on-the-tip-and-sample" id="toc-setting-the-focuses-on-the-tip-and-sample" class="nav-link" data-scroll-target="#setting-the-focuses-on-the-tip-and-sample">Setting the Focuses on the Tip and Sample</a></li>
+  <li><a href="#tuning-the-cantilever" id="toc-tuning-the-cantilever" class="nav-link" data-scroll-target="#tuning-the-cantilever">Tuning the Cantilever</a></li>
+  <li><a href="#setting-scan-parameters" id="toc-setting-scan-parameters" class="nav-link" data-scroll-target="#setting-scan-parameters">Setting Scan Parameters</a></li>
+  <li><a href="#beginning-the-scans" id="toc-beginning-the-scans" class="nav-link" data-scroll-target="#beginning-the-scans">Beginning the Scans</a></li>
+  <li><a href="#things-to-mention-about-taking-scans-tips." id="toc-things-to-mention-about-taking-scans-tips." class="nav-link" data-scroll-target="#things-to-mention-about-taking-scans-tips.">Things to Mention About Taking Scans/ Tips.</a></li>
+  </ul></li>
+  <li><a href="#power-off-procedure" id="toc-power-off-procedure" class="nav-link" data-scroll-target="#power-off-procedure">Power off Procedure</a></li>
+  <li><a href="#if-the-tip-needs-to-be-replaced" id="toc-if-the-tip-needs-to-be-replaced" class="nav-link" data-scroll-target="#if-the-tip-needs-to-be-replaced">If the Tip Needs to be Replaced</a></li>
+  <li><a href="#motors-not-initializing-error" id="toc-motors-not-initializing-error" class="nav-link" data-scroll-target="#motors-not-initializing-error">Motors Not Initializing Error</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="cypher-afm" class="level1">
+<h1>Cypher AFM</h1>
+<section id="history" class="level2">
+<h2 class="anchored" data-anchor-id="history">History</h2>
+<ul>
+<li>initial: 11/08/2022</li>
+<li>update: 04/24/2023</li>
+</ul>
+</section>
+<section id="warnings" class="level2">
+<h2 class="anchored" data-anchor-id="warnings">Warnings</h2>
+<ul>
+<li><p>Only trained users can operate the Cypher AFM</p></li>
+<li><p>To become a trained user, one must complete the following</p>
+<ul>
+<li>Complete the general safety training provided by the CNSM safety office, which can be found at /<a href="https://web.csulb.edu/colleges/cnsm/safety/quiz/">General Safety Training.</a></li>
+<li>Contact a current trained user and ask to shadow them as they use the AFM.</li>
+<li>Contact Dr.&nbsp;Gredig to obtain log in information to his Gwiki.</li>
+<li>Once radiation training is complete, the prospective user must contact Dr.&nbsp;Gredig receive training on the AFM itself.</li>
+</ul></li>
+<li><p>Carefully read the entire manual before operation.</p></li>
+<li><p><strong>The AFM stage is magnetic and the internal electronics are sensitive to shocks. When loading sample plates slide them in from the side. DO NOT DROP THE PLATE IN FROM ABOVE WHEN LOADING.</strong></p></li>
+<li><p>Sometimes the Cypher will have a “motors not initializing, movement off limits” error. To find remedies, refer to the “Motors Not Initializng Error” section.</p></li>
+</ul>
+</section>
+<section id="reserve-a-session-before-you-plan-to-use" class="level2">
+<h2 class="anchored" data-anchor-id="reserve-a-session-before-you-plan-to-use">Reserve a Session BEFORE you plan to use</h2>
+<ol type="1">
+<li><p>The Cypher AFM is used by many different labs on campus so we need to use make sure that there is a system that is followed by all parties when using the Cypher.</p></li>
+<li><p>The lab calendar is located on the Gwiki - Gredig Lab webpage found at /<a href="https://beach77.com/gwiki/index.php?title=Lab_Calendar">Gwiki Lab Calendar</a>.</p></li>
+<li><p>Identify a day that the cypher has not been reserved or contact the reserved user to see they are planning a full or half day and if a second user can fit in on the schedule.</p></li>
+<li><p>Once a day has been identified, navigate to the “Schedule for Cypher” by clicking on the “Cypher AFM” hyperlink on the webpage or /<a href="https://beach77.com/gwiki/index.php?title=Schedule_for_Cypher">Schedule for Cypher</a>.</p></li>
+<li><p>Click “Edit”.</p></li>
+<li><p>Make a new even with the form “Event:Cypher/yyyy/mm/dd_XXX, where ymd are digits and XXX is any text (usually a last name), make sure to use slashes and underscores”.</p></li>
+<li><p>Scroll to the bottom of the page and click “save changes”.</p></li>
+<li><p>The newly created event will appear in red text.</p></li>
+</ol>
+<ul>
+<li><p>Click on the newly created event</p></li>
+<li><p>Click “Edit”.</p></li>
+<li><p>Type in a short description for what is happening on that day.</p></li>
+<li><p><strong>NOTE:</strong> Failure to fill in a description will cause the event to NOT appear on the lab calendar.</p></li>
+<li><p><strong>NOTE</strong> The party that fails to reserve a session must clean and leave the Cypher when the reserved user arrives.</p></li>
+</ul>
+</section>
+<section id="system-start-up" class="level2">
+<h2 class="anchored" data-anchor-id="system-start-up">System Start Up</h2>
+<ol type="1">
+<li>Sign your name in the notebook log book and the digital log book found at /<a href="https://beach77.com/gwiki/index.php?title=Log_Cypher">GWiki</a>.</li>
+</ol>
+<ul>
+<li><p>Check the last used tip.</p></li>
+<li><p>Log: name, date, time in, and sample that will be used in the AFM</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Turn on the controller by pressing the power button on the ARC2 Controller.</li>
+</ol>
+<ul>
+<li>The power button is below the black plug in the image below.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_01.jpeg" class="img-fluid figure-img"></p>
+<figcaption>ARC2 Controller</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li><p>Turn on the laser by turning the key clockwise to the “on” position.</p></li>
+<li><p>Log into the computer</p></li>
+</ol>
+<ul>
+<li>The computer password will be given to you during shadowing sessions and official training with Dr.&nbsp;Gredig.</li>
+</ul>
+<ol start="5" type="1">
+<li>Check tip and try to see if the tip needs to be replaced. If the tip does not need to be replaced, then continue to the “Measurement for AC Mode” Section.</li>
+</ol>
+</section>
+<section id="measurement-for-ac-mode" class="level2">
+<h2 class="anchored" data-anchor-id="measurement-for-ac-mode">Measurement for AC Mode</h2>
+<section id="starting-the-software" class="level3">
+<h3 class="anchored" data-anchor-id="starting-the-software">Starting the Software</h3>
+<ol type="1">
+<li><p>Ensure that the correct sample is recorded in log book.</p></li>
+<li><p>Open software “AR 18.22.41” on desktop.</p></li>
+<li><p>Wait for system to initialize.</p></li>
+</ol>
+<ul>
+<li>A window saying “Initializing, Don’t do anything rash.” should appear.</li>
+</ul>
+<ol start="4" type="1">
+<li>When initialization is completed, the mode master selector menu screen will appear (shown below).</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_04.png" class="img-fluid figure-img"></p>
+<figcaption>Mode Master Selector Menu</figcaption>
+</figure>
+</div>
+<ul>
+<li>Select the desired mode (AC non contact mode)</li>
+</ul>
+<ol start="5" type="1">
+<li>Wait for all windows to finish opening and loading.</li>
+</ol>
+<ul>
+<li>When finished, the program window should look like the following image.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_05.jpg" class="img-fluid figure-img"></p>
+<figcaption>AC mode operating screen.</figcaption>
+</figure>
+</div>
+<ol start="6" type="1">
+<li>In the “Engage Panel” click “Initialize Motors” and wait for that to finish.</li>
+</ol>
+</section>
+<section id="loading-samples" class="level3">
+<h3 class="anchored" data-anchor-id="loading-samples">Loading Samples</h3>
+<ol type="1">
+<li><p>Open door on AFM and remove magnetic shield.</p></li>
+<li><p>Raise the black lever on the right side and pull out the stage.</p></li>
+<li><p>Make sure that sample is free of all debris.</p></li>
+<li><p>Insert sample into the AFM stage.</p></li>
+</ol>
+<ul>
+<li><p>The sample should lay atop a metal sample plate.</p></li>
+<li><p>If the sample is not fragile and not more experimentation is going to be performed on the sample, it can be secured to the sample plate using double sided carbon tape located in the red tool cabinet.</p></li>
+<li><p><strong>NOTE</strong>: some adhesive should be removed from the tape by repeatedly touching the surface of the tape with a glove or kim wipe.</p></li>
+<li><p>If the sample is fragile or more experimentation will be done to the sample, inserting a sample plate into the AFM stage and placing the sample on top of it will suffice.</p></li>
+<li><p><strong>WARNING</strong>: the AFM stage is magnetic and the internal electronics are sensitive to shocks. When loading sample plates slide them in from the side. DO NOT DROP THE PLATE IN FROM ABOVE WHEN LOADING.</p></li>
+</ul>
+<ol start="5" type="1">
+<li><p>Push the stage back into place and move the black lever down.</p></li>
+<li><p>Place magnetic shield and close AFM door.</p></li>
+</ol>
+</section>
+<section id="setting-the-focuses-on-the-tip-and-sample" class="level3">
+<h3 class="anchored" data-anchor-id="setting-the-focuses-on-the-tip-and-sample">Setting the Focuses on the Tip and Sample</h3>
+<ol type="1">
+<li>Using the knob on the AFM, turn CCW until the tip is about ’‘’1 mm’’’ from the sample.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_06.png" class="CypherImagesCenter img-fluid figure-img"></p>
+<figcaption>Tip lowering knob on Cypher AFM. Turn Clockwise to raise the tip and turn counter-clockwise to lower the tip.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>NOTE</strong> the tip will travel faster depending on how much the knob is turned.</li>
+</ul>
+<ol start="2" type="1">
+<li>In the “Video” window, use the arrows that surround a red target to move the laser until the cantilever is in view.</li>
+</ol>
+<ul>
+<li><p><strong>Note</strong> This step might take a while if the size of cantilever that is being used greatly differs from the last one.</p></li>
+<li><p>It is helpful to adjust the brightness and exposure to do this. The settings I used were: Brightness: ~11%, Exposure: 33.</p></li>
+<li><p>If the video window is not displaying anything, try zooming in and then out to reset the camera.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>After the tip is in focus, Press “SET” button next to “FOCUS ON TIP” to set the focus height on the tip in the Engage Panel</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_07.jpg" class="CypherImagesCenter img-fluid figure-img"></p>
+<figcaption>Engage Panel</figcaption>
+</figure>
+</div>
+<ol start="4" type="1">
+<li>After the focus is set, move the laser with the arrows that surround a red target, such that you maximize “Sum” found in the “Sum and Deflection Panel”.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_08.jpg" class="CypherImagesCenter img-fluid figure-img"></p>
+<figcaption>Sum and Deflection Panel</figcaption>
+</figure>
+</div>
+<ol start="5" type="1">
+<li><p>Within the Sum and Deflection Meter Panel, navigate to the “Detector” tab and select “Zero PD”. This should cause the red dot to move to the center of the cross hair.</p></li>
+<li><p>Next, move the optical focus down to get the sample in focus</p></li>
+</ol>
+<ul>
+<li><p>Again, its helpful to adjust the brightness and exposure. I increased the both the brightness and exposure by increments of 5.</p></li>
+<li><p><strong>NOTE:</strong> a good way to determine if you are looking at the sample is to use the arrows that surround the video window and check to see if the features in the background move.</p></li>
+<li><p>Another good way to determine if you are near the surface is to see if the outter circle of the optical microscope is in focus, if it has sharp edges, then you are close to the surface, if it is not sharp then you are not near the surface.</p></li>
+</ul>
+</section>
+<section id="tuning-the-cantilever" class="level3">
+<h3 class="anchored" data-anchor-id="tuning-the-cantilever">Tuning the Cantilever</h3>
+<ol type="1">
+<li><p>Make sure the camera is focused on the tip</p></li>
+<li><p>Locate the the master panel, shown in the image below.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_09.jpg" class="CypherImagesCenter img-fluid figure-img"></p>
+<figcaption>Master Panel</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Click the “thermal” button in the blue side bar. Click “get real” and then click on the probe tip that you are using.</li>
+</ol>
+<ul>
+<li><p>A window shown in the image below should appear</p></li>
+<li><p>Select getreal<span class="math inline">\(^{TM}\)</span> calibration in the right side bar of the new thermal window</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_10.jpg" class="img-fluid figure-img"></p>
+<figcaption>Thermal Graph</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>Select the correct tip and press GetReal Calibration.</p></li>
+<li><p>At the top of the frequency sweep window, record the ampInvOls [nm/V] and spring constant [nN/nm] values in your lab notebook.</p></li>
+</ul>
+<ol start="4" type="1">
+<li>Select the “Tune” button in the master panel, the following window should appear.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_11.jpg" class="img-fluid figure-img"></p>
+<figcaption>Tune Window</figcaption>
+</figure>
+</div>
+<ol start="5" type="1">
+<li><p>In the Cantilever Tune window, click the “Adv” button in the blue side bar and change Piezo to BlueDrive (if wanting to use blue drive).</p></li>
+<li><p>In the Cantilever Tune window, click on “Params” in the blue side bar and under “Auto Tune” change the “Target Percent” to -5.</p></li>
+<li><p>Click “Auto Tune” in the Cantilever Tune window.</p></li>
+<li><p>Record the values on cantilever tune graph (drive frequency [KHz], sweep width [KHz], drive amplitude [mW], tune q).</p></li>
+<li><p>Determine your sample rate using eqn.</p></li>
+</ol>
+<p><span class="math display">\[
+Sample Rate = \frac{Drive Frequency}{Tune Q}
+\]</span></p>
+</section>
+<section id="setting-scan-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="setting-scan-parameters">Setting Scan Parameters</h3>
+<ol type="1">
+<li>Inside the imaging window, (AC mode), select the desired set point.</li>
+</ol>
+<ul>
+<li>The value of the set point should be set to 80% of the target amplitude</li>
+</ul>
+<ol start="2" type="1">
+<li>Input the desired Scan size in <span class="math inline">\(\mu m\)</span>, points and lines, and the scan rate</li>
+</ol>
+<ul>
+<li>Do not do scans of size 20<span class="math inline">\(\mu m\)</span> by 20<span class="math inline">\(\mu m\)</span>. If there are any high peaks the tip could get damaged due to colliding with the peak.</li>
+</ul>
+<ol start="3" type="1">
+<li>Input base name, note, and mode under save options.</li>
+</ol>
+<ul>
+<li><p>The name should follow the convention: Date_Project_Initials_Tool_Sample_RunInfo.csv</p></li>
+<li><p>The Igor software has restrictions on naming files so the name outlined in the step above cannot be set in the software.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_13.jpg" class="CypherImagesCenter img-fluid figure-img"></p>
+<figcaption>Naming Restrictions</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>A naming convention that I’ve found to work is AppendedSampleName_SampleInfo_.</p></li>
+<li><p>An example: RM220915Si07_Pos</p></li>
+<li><p>This name will allow igor to add their image number (0000) and maximizes the amount of characters used in naming.</p></li>
+<li><p>A python script was written to fix the name in post, contact Ryan Mizukami for the script.</p></li>
+<li><p>The note is unique to each picture.</p></li>
+</ul>
+<ol start="4" type="1">
+<li>Go to the “Programming Tab” at the top of the window and select “filter panel” in order to see the sampling rate of the Cypher.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_12.jpg" class="CypherImagesCenter img-fluid figure-img"></p>
+<figcaption>filter panel</figcaption>
+</figure>
+</div>
+<ol start="5" type="1">
+<li>Compare the calculated sample to the sample rate displayed in the filter panel.</li>
+</ol>
+</section>
+<section id="beginning-the-scans" class="level3">
+<h3 class="anchored" data-anchor-id="beginning-the-scans">Beginning the Scans</h3>
+<ol type="1">
+<li>You can capture an optical image of the sample’s surface by using controls in the “Video Window”</li>
+</ol>
+<ul>
+<li><p>Focus the optical microscope on the sample’s surface adjust the brightness and exposure such that the sample’s surface looks “good”.</p></li>
+<li><p>locate the “Capture” button at the top of the window.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/OpticalMicroscopeCaptureWindow.PNG" class="CypherImagesCenter img-fluid figure-img"></p>
+<figcaption>Video Window</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>Press the “Capture” button to save a .tiff image of the video window.</p></li>
+<li><p>The captured image will increase the counter of the image.</p></li>
+</ul>
+<ol start="2" type="1">
+<li><p>In the “Engage Panel” Click “Move to pre-engage”.</p></li>
+<li><p>Check the optical microscope window to see if both the sample and tip are still in focus by clicking on “focus on tip” and “focus on sample”.</p></li>
+</ol>
+<ul>
+<li><p>If the sample is out of focus:</p>
+<ul>
+<li>Refocus the optical microscope on the sample and press “Set” next to “focus on sample”</li>
+</ul></li>
+<li><p>If the tip is out of focus:</p>
+<ul>
+<li>Refocus the optical microscope on the tip and press “Set” next to “focus on tip”</li>
+</ul></li>
+<li><p>If either the tip or the sample were out of focus:</p>
+<ul>
+<li>Perform the “Tuning the Cantilever” Section again <strong>before continuing with the tip approach</strong>.</li>
+</ul></li>
+</ul>
+<ol start="4" type="1">
+<li>Click “Begin tip approach”.</li>
+</ol>
+<ul>
+<li>The Z Voltage monitor in the Sum and Deflection Panel should oscillate from positive to negative as the tip approaches the set point.</li>
+</ul>
+<ol start="5" type="1">
+<li>Once the tip has finished its approach, click “engage” within the Sum and Deflection Panel.</li>
+</ol>
+<ul>
+<li><p>The set point should be reached</p></li>
+<li><p>To check if the tip is engaged to the surface, use the hamster wheel to check if slightly changing the setpoint will change the z voltage. If the z voltage does not change as the setpoint is lowered slightly then the tip is likely to be engaged.</p></li>
+<li><p>If the Z Voltage is not stuck then you will need to withdrawal, change the set point and then start the tip approach again.</p></li>
+<li><p>Once the Z voltage is stuck you can move on to the next step.</p></li>
+</ul>
+<ol start="6" type="1">
+<li><p>Select “Frame Up” within the master panel.</p></li>
+<li><p>Adjust the parameters so that</p></li>
+</ol>
+</section>
+<section id="things-to-mention-about-taking-scans-tips." class="level3">
+<h3 class="anchored" data-anchor-id="things-to-mention-about-taking-scans-tips.">Things to Mention About Taking Scans/ Tips.</h3>
+<ol type="1">
+<li>Avoid phase hopping</li>
+</ol>
+<ul>
+<li>When the phase oscillates between lower than 90° to greater than 90°. This process can be read more on in Dr.&nbsp;Gredigs textbook about AFM found at /<a href="https://home.csulb.edu/~tgredig/phys545/afm.html">PHYS 545 - Advanced Experimental Methods in Materials Science - Thomas Gredig</a></li>
+</ul>
+<ol start="2" type="1">
+<li><p>Look at log on gwiki to see if issue has be seen before.</p></li>
+<li><p>Log <strong>ALL</strong> issues that are seen when taking scans, if it is a repeated problem then a technician can be contacted.</p></li>
+</ol>
+<ul>
+<li>Take screen shots or record the anomalous behavior and inform Dr.&nbsp;Gredig.</li>
+</ul>
+<ol start="4" type="1">
+<li><p>Contact Dr.&nbsp;Gredig or a trained user when running into unknown issues.</p></li>
+<li><p>Asylum Research AFM Customer Support number: 1-805-696-6466</p></li>
+<li><p>The ampInvOls can be used by taking an initial scan to get a good estimate of the z range.</p></li>
+</ol>
+<ul>
+<li><p>This can be obtained by accessing the AFMDATA folder, located on the desktop, and dragging an image into the ARC 2 Controller Software.</p></li>
+<li><p>An image will appear with the range displayed in the upper left corner.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/cypherAFM_20221108_14.png" class="img-fluid figure-img"></p>
+<figcaption>igor image</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>The follwing formula can be used to calculate the target amplitude. <span class="math display">\[
+A_{Target} = r * AIO
+\]</span> where r is the z range, and AIO is the AmpInvOls that was recorded during the thermal frequency sweep step.</p></li>
+<li><p>Once the new target amplitude is obtained, move the tip to pre-engage, input the new target amplitude in the tune parameters window.</p></li>
+<li><p>Ensure to reset the set point to 80% of the new target amplitude</p></li>
+<li><p>re-tune the cantilever and then begin the approach of the tip again.</p></li>
+</ul>
+</section>
+</section>
+<section id="power-off-procedure" class="level2">
+<h2 class="anchored" data-anchor-id="power-off-procedure">Power off Procedure</h2>
+<ol type="1">
+<li><p>Select “Stop” in the master panel.</p></li>
+<li><p>Select (un)load the sample located in the Engage panel.</p></li>
+<li><p>Turn off the laser.</p></li>
+<li><p>Un-mount the sample.</p></li>
+<li><p>If the AFM will not be used for the next couple of days, Turn the AFM controller off.</p></li>
+<li><p>Lock, Deactivate, and power off the vibration isolation table.</p></li>
+<li><p>Put the computer to sleep.</p></li>
+</ol>
+</section>
+<section id="if-the-tip-needs-to-be-replaced" class="level2">
+<h2 class="anchored" data-anchor-id="if-the-tip-needs-to-be-replaced">If the Tip Needs to be Replaced</h2>
+<ol type="1">
+<li><p>Inside of the Cypher accessories box, obtain the changing station, tweezers, and tips.</p></li>
+<li><p>Open door on AFM and remove magnetic shield.</p></li>
+<li><p>If there is a sample, remove the sample.</p></li>
+<li><p>Raise the black lever on the right side and pull out the stage.</p></li>
+<li><p>Use allen wrench, located on the right side of the stage, to unscrew tip-mount (1 small ccw turn).</p></li>
+<li><p>Remove piece, flip, and insert into changing station.</p></li>
+<li><p>Tighten the screw on the changing station to secure the chip.</p></li>
+<li><p>Press the button and remove the tip with tweezers.</p></li>
+<li><p>Insert new tip by pressing down the button and inserting the flat piece half way into the circle (make sure new tip is not damaged).</p></li>
+<li><p>Unscrew the screw on the changing station, take out the chip and put it into the AFM.</p></li>
+<li><p>Tighten the screw that we loosed first, make sure to put the allen wrench back inside of the AFM.</p></li>
+<li><p>Push the stage back into place and move the black lever down.</p></li>
+<li><p>Place magnetic shield and close AFM door.</p></li>
+</ol>
+</section>
+<section id="motors-not-initializing-error" class="level2">
+<h2 class="anchored" data-anchor-id="motors-not-initializing-error">Motors Not Initializing Error</h2>
+<p>Some times the motors will fail to initialize. This can be caused by the motors or stage getting “stuck”. When this happens, turn off all pieces of the system (controller, computer, AFM) and let sit for at least 1 hour. <strong>If you return and the system will still not initialize, contact Dr.&nbsp;Gredig or a member of the Gredig Lab who is an authorized user of the system.</strong></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

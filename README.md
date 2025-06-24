@@ -1,25 +1,20 @@
 # Public SOP Collection for Gredig Lab
 
-
 ## History
 
+- 2025-06-23: conversion of RMD to QMD (Quarto)
 - 2021-10-06: first template for Park AFM (Authors: Gredig / Halls)
 
+## Render SOPs
+
+- update `_quarto.yml`, then
+- render with `quarto render`.
 
 
-## Render the book
+## Update SOPs
 
-- Render locally with `bookdown::render_book("index.Rmd")`.
-
-- Use `browseURL("docs/index.html")` to view your book locally
-
-
-
-## Bibliography
-
-
-- Official guide to **bookdown**: https://bookdown.org/yihui/bookdown
-- (Bookdown Template)[https://github.com/jtr13/bookdown-template]
-
+- Move images to `assets/images` folder
+- Add `qmd` file to `instruments/` folder
+- update `_quarto.yml` with new instrument `qmd` file
 
 
