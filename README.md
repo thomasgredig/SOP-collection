@@ -8,7 +8,7 @@
 ## Render SOPs
 
 - update `_quarto.yml`, then
-- render with `quarto render`.
+- render with [Quarto CLI](https://quarto.org/) from terminal type `quarto render`.
 
 
 ## Update SOPs
