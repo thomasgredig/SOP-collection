@@ -348,5 +348,47 @@
     "title": "Angstrom Thermal Evaporator (ATE)",
     "section": "",
     "text": "If there is not a preexisting recipe for your deposition, navigate to the “Recipe” chiclet and open the “Process Builder” tab. Click New if starting a recipe from scratch. Click Open if editing an existing recipe or using an existing recipe as reference. - Only one recipe can be opened at a time within the Process Builder tab.\nFor recipes with a new material, it must first be added to the material database found in the “Materials” tab in the “Setup” chiclet.\nFor the first deposition with a new material or a material in a new deposition source, an AutoTune step must be run prior to deposition to determine the PID parameters."
+  },
+  {
+    "objectID": "instruments/09-MPS_PTH1.html",
+    "href": "instruments/09-MPS_PTH1.html",
+    "title": "Standard Operating Procedure for MPS-PTH",
+    "section": "",
+    "text": "This SOP outlines the steps of using MPS-PTH for measuring resistance.\n\n\n\n\nAlways wear appropriate personal protective equipment such as gloves.\nEnsure the equipment is properly grounded to prevent electrostatic discharge.\nHandle sensitive components with tweezers carefully to avoid damage.\nTurn off all power sources before performing maintenance or after experiments to avoid electrical hazards.\n\n\n\n\n\nKeithley 2400, MPS-PTH, Temperature controller, RS-232, Computer\n\n\n\n\n\n\n\n\nTurn on the computer and all the instruments (Keithley2400, MPS_PTH, Temperature controller, PC).\nVerify all connections as shown in the pictures below.\n\n\n\n\nLaunch Micro Probe System program and ensure all devices are recognized as shown below.(Temperature: Temperature controller, Measurement: Keithley 2400)\n\n\n\nIf one of those or both is “OFF,” check the physical connection again and click on the picture of the disconnected device.\nClick on “Refresh, select the right port, and click on”Connect.”\n\n\n\nGo back to the instrument connection condition and verify whether the device connection is “ON.”\nIf “OFF,” click on “OFF” and change it to “ON.”\n\n\n\n\n\nWear gloves to prevent contamination and prepare the sample stage.\nOpen the cover of MPS-PTH.\nCarefully retract the probe tips from the sample stage to ensure they are clear of the surface.\nCarefully place the sample on the stage using tweezers.\nAdjust probe tips or other components as needed for measurement.\n\n\n\n\n\nOpen the software and Check that the temperature controller and Keithley2400 are connected well with PC.\nGo to “Recipe” and set the desired parameters (e.g., target temperature, time, Ramping rate).\nBecause sample is usually sensitive, set for Ramping Rate from 1 to 5.\n\n\n\nInitiate the measurement process.\nMonitor the process and adjust settings if necessary.\n\n\n\n\n\nLoosen the nut and open the cover again.\nSafely remove the sample from the stage using tweezers.\nCover the top.\n\n\n\n\n\n\nhttps://www.sensor-test.de/assets/Fairs/2023/Exhibitors/PressReleases/Catalog_MPS_2023v01.3_compressed.pdf"
+  },
+  {
+    "objectID": "instruments/09-MPS_PTH1.html#purpose",
+    "href": "instruments/09-MPS_PTH1.html#purpose",
+    "title": "Standard Operating Procedure for MPS-PTH",
+    "section": "",
+    "text": "This SOP outlines the steps of using MPS-PTH for measuring resistance."
+  },
+  {
+    "objectID": "instruments/09-MPS_PTH1.html#warnings-and-precautions",
+    "href": "instruments/09-MPS_PTH1.html#warnings-and-precautions",
+    "title": "Standard Operating Procedure for MPS-PTH",
+    "section": "",
+    "text": "Always wear appropriate personal protective equipment such as gloves.\nEnsure the equipment is properly grounded to prevent electrostatic discharge.\nHandle sensitive components with tweezers carefully to avoid damage.\nTurn off all power sources before performing maintenance or after experiments to avoid electrical hazards."
+  },
+  {
+    "objectID": "instruments/09-MPS_PTH1.html#equipment-and-materials",
+    "href": "instruments/09-MPS_PTH1.html#equipment-and-materials",
+    "title": "Standard Operating Procedure for MPS-PTH",
+    "section": "",
+    "text": "Keithley 2400, MPS-PTH, Temperature controller, RS-232, Computer"
+  },
+  {
+    "objectID": "instruments/09-MPS_PTH1.html#procedure",
+    "href": "instruments/09-MPS_PTH1.html#procedure",
+    "title": "Standard Operating Procedure for MPS-PTH",
+    "section": "",
+    "text": "Turn on the computer and all the instruments (Keithley2400, MPS_PTH, Temperature controller, PC).\nVerify all connections as shown in the pictures below.\n\n\n\n\nLaunch Micro Probe System program and ensure all devices are recognized as shown below.(Temperature: Temperature controller, Measurement: Keithley 2400)\n\n\n\nIf one of those or both is “OFF,” check the physical connection again and click on the picture of the disconnected device.\nClick on “Refresh, select the right port, and click on”Connect.”\n\n\n\nGo back to the instrument connection condition and verify whether the device connection is “ON.”\nIf “OFF,” click on “OFF” and change it to “ON.”\n\n\n\n\n\nWear gloves to prevent contamination and prepare the sample stage.\nOpen the cover of MPS-PTH.\nCarefully retract the probe tips from the sample stage to ensure they are clear of the surface.\nCarefully place the sample on the stage using tweezers.\nAdjust probe tips or other components as needed for measurement.\n\n\n\n\n\nOpen the software and Check that the temperature controller and Keithley2400 are connected well with PC.\nGo to “Recipe” and set the desired parameters (e.g., target temperature, time, Ramping rate).\nBecause sample is usually sensitive, set for Ramping Rate from 1 to 5.\n\n\n\nInitiate the measurement process.\nMonitor the process and adjust settings if necessary.\n\n\n\n\n\nLoosen the nut and open the cover again.\nSafely remove the sample from the stage using tweezers.\nCover the top."
+  },
+  {
+    "objectID": "instruments/09-MPS_PTH1.html#references",
+    "href": "instruments/09-MPS_PTH1.html#references",
+    "title": "Standard Operating Procedure for MPS-PTH",
+    "section": "",
+    "text": "https://www.sensor-test.de/assets/Fairs/2023/Exhibitors/PressReleases/Catalog_MPS_2023v01.3_compressed.pdf"
   }
 ]

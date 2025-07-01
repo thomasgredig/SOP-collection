@@ -1,0 +1,70 @@
+# Standard Operating Procedure for MPS-PTH
+
+## Purpose
+
+This SOP outlines the steps of using MPS-PTH for measuring resistance.
+
+## Warnings and Precautions
+
+- Always wear appropriate personal protective equipment such as gloves.
+- Ensure the equipment is properly grounded to prevent electrostatic discharge.
+- Handle sensitive components with tweezers carefully to avoid damage.
+- Turn off all power sources before performing maintenance or after experiments to avoid electrical hazards.
+
+## Equipment and Materials
+
+- Keithley 2400, MPS-PTH, Temperature controller, RS-232, Computer
+
+![](../assets/images/MPS-PTH_1.png)
+
+## Procedure
+
+### 1\. Preparation
+
+1. Turn on the computer and all the instruments (Keithley2400, MPS_PTH, Temperature controller, PC).
+2. Verify all connections as shown in the pictures below.
+
+![](../assets/images/MPS-PTH_2.png)
+
+![](../assets/images/MPS-PTH_3.png)
+
+1. Launch Micro Probe System program and ensure all devices are recognized as shown below.(Temperature: Temperature controller, Measurement: Keithley 2400)
+
+![](../assets/images/MPS-PTH_4.png)
+
+1. If one of those or both is "OFF," check the physical connection again and click on the picture of the disconnected device.
+2. Click on "Refresh, select the right port, and click on "Connect."
+
+![](../assets/images/MPS-PTH_5.png)
+
+1. Go back to the instrument connection condition and verify whether the device connection is "ON."
+2. If "OFF," click on "OFF" and change it to "ON."
+
+### 2\. Sample Handling
+
+1. Wear gloves to prevent contamination and prepare the sample stage.
+2. Open the cover of MPS-PTH.
+3. Carefully retract the probe tips from the sample stage to ensure they are clear of the surface.
+4. Carefully place the sample on the stage using tweezers.
+5. Adjust probe tips or other components as needed for measurement.
+
+### 3\. Measurement(resistance)
+
+1. Open the software and Check that the temperature controller and Keithley2400 are connected well with PC.
+2. Go to “Recipe” and set the desired parameters (e.g., target temperature, time, Ramping rate).
+3. Because sample is usually sensitive, set for Ramping Rate from 1 to 5.
+
+![](../assets/images/MPS-PTH_6.png)
+
+1. Initiate the measurement process.
+2. Monitor the process and adjust settings if necessary.
+
+### 4\. Post-Measurement
+
+1. Loosen the nut and open the cover again.
+2. Safely remove the sample from the stage using tweezers.
+3. Cover the top.
+
+## References
+
+- <https://www.sensor-test.de/assets/Fairs/2023/Exhibitors/PressReleases/Catalog_MPS_2023v01.3_compressed.pdf>
