@@ -19,7 +19,7 @@ This SOP outlines the steps of using MPS-PTH for measuring resistance.
 
 ## Procedure
 
-### 1\. Preparation
+### Preparation
 
 1. Turn on the computer and all the instruments (Keithley2400, MPS_PTH, Temperature controller, PC).
 2. Verify all connections as shown in the pictures below.
@@ -40,7 +40,7 @@ This SOP outlines the steps of using MPS-PTH for measuring resistance.
 1. Go back to the instrument connection condition and verify whether the device connection is "ON."
 2. If "OFF," click on "OFF" and change it to "ON."
 
-### 2\. Sample Handling
+### Sample Handling
 
 1. Wear gloves to prevent contamination and prepare the sample stage.
 2. Open the cover of MPS-PTH.
@@ -48,7 +48,7 @@ This SOP outlines the steps of using MPS-PTH for measuring resistance.
 4. Carefully place the sample on the stage using tweezers.
 5. Adjust probe tips or other components as needed for measurement.
 
-### 3\. Measurement(resistance)
+### Measurement(resistance)
 
 1. Open the software and Check that the temperature controller and Keithley2400 are connected well with PC.
 2. Go to “Recipe” and set the desired parameters (e.g., target temperature, time, Ramping rate).
@@ -59,7 +59,7 @@ This SOP outlines the steps of using MPS-PTH for measuring resistance.
 1. Initiate the measurement process.
 2. Monitor the process and adjust settings if necessary.
 
-### 4\. Post-Measurement
+### Post-Measurement
 
 1. Loosen the nut and open the cover again.
 2. Safely remove the sample from the stage using tweezers.
