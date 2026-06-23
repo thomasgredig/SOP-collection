@@ -1,0 +1,37 @@
+---
+title: "10-Temperature-Controller"
+format: html
+---
+
+## Warnings
+
+1. Do **not** open the cover while it is still plugged into the power source to avoid high voltage shock in the controller.
+2. When using the high temperature stage, please keep away so you can 
+avoid from serious injury.
+
+## Setup Instructions
+
+### A. Remove Z stage
+1. Unplug z stage and pull butterfly clips holding z stage in place forward.
+2. Slide z stage to the right and place onto z stage holder.
+
+### B. Install Heat Stage
+3. Unscrew the magnetic Sample Holder by turning it counter-clockwise.
+4. Install the Heating Stage on jig using 6 M2.5*6 S/H bolts.
+5. Connect the ground cable.
+6. Fix the ‘Open Chamber Large’ on top of the Main Body using 4 M2*8 S/H bolts.
+7. Attach the tube (Inlet for Argon gas) into tube holder.
+
+### C. Sample Loading
+8. Apply the thermal compound with a toothpick to ensure good thermal contact between the sample stage and the sample. Spread 
+9. Place the sample on the sample stage. 
+
+## Operation Instructions
+
+1. Lower the Z stage until the distance between tip and sample surface is 1~2mm.
+2. Supply Argon gas through Inlet for 3~5 minutes.
+**NOTE**: Do *NOT* supply Ar and scan sample simultaneously. The supply of Ar introduces noise and ruins the scan.
+3. Turn on the Temperature Controller. Press the Infinity key ∞ to back up one level, or press and hold for two seconds to return the Home Page.
+4. Set the target temperature on Right(lower) display using ‘UP’ and ‘Down’ keys.
+5. Wait for Left(Upper) Display to match Right(lower) display. This means that the stage has reached target temperature.
+6. Approach tip to sample once temperature and drift are stable.
