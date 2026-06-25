@@ -9,6 +9,8 @@ website:
       - index.qmd
       - href: instruments/01-ParkAFM.qmd
         text: Park AFM
+      - href: instruments/10-Temperature-Controller.qmd
+        text: Park AFM (Temperature Controller)
       - href: instruments/02-EMS575-Sputtering.qmd
         text: Sputter Coater
       - href: instruments/03-PE25-Plasma-Etcher.qmd
