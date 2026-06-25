@@ -10,3 +10,4 @@
 **/*.quarto_ipynb
 /docs/site_libs
 /docs/site_libs
+/docs
