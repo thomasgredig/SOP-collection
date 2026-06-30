@@ -35,4 +35,5 @@ avoid from serious injury.
 3. Turn on the Temperature Controller. Press the Infinity key ∞ to back up one level, or press and hold for two seconds to return the Home Page.
 4. Set the target temperature on Right(lower) display using ‘UP’ and ‘Down’ keys.
 5. Wait for Left(Upper) Display to match Right(lower) display. This means that the stage has reached target temperature.
-6. Approach tip to sample once temperature and drift are stable.
+6. Once the stage has reached target temperature, allow the sample to heat for 15 minutes to ensure thermal equilibrium.
+7. Approach tip to sample once temperature and drift are stable.
